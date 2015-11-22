@@ -15,6 +15,10 @@
 		8761E8201BFDFC6100AFABA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8761E81E1BFDFC6100AFABA3 /* LaunchScreen.storyboard */; };
 		8761E82B1BFDFC6100AFABA3 /* gosense_ios_clientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8761E82A1BFDFC6100AFABA3 /* gosense_ios_clientTests.m */; };
 		8761E8361BFDFC6100AFABA3 /* gosense_ios_clientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8761E8351BFDFC6100AFABA3 /* gosense_ios_clientUITests.m */; };
+		87FBA5281C01E858004CB8A1 /* MealTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBA5261C01E858004CB8A1 /* MealTableViewCell.m */; };
+		87FBA5291C01E858004CB8A1 /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87FBA5271C01E858004CB8A1 /* MealTableViewCell.xib */; };
+		87FBA52D1C01E8DF004CB8A1 /* TableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBA52B1C01E8DF004CB8A1 /* TableViewCell2.m */; };
+		87FBA52E1C01E8DF004CB8A1 /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87FBA52C1C01E8DF004CB8A1 /* TableViewCell2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		8761E8311BFDFC6100AFABA3 /* gosense-ios-clientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gosense-ios-clientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8761E8351BFDFC6100AFABA3 /* gosense_ios_clientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gosense_ios_clientUITests.m; sourceTree = "<group>"; };
 		8761E8371BFDFC6100AFABA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87FBA5251C01E858004CB8A1 /* MealTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealTableViewCell.h; sourceTree = "<group>"; };
+		87FBA5261C01E858004CB8A1 /* MealTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealTableViewCell.m; sourceTree = "<group>"; };
+		87FBA5271C01E858004CB8A1 /* MealTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealTableViewCell.xib; sourceTree = "<group>"; };
+		87FBA52A1C01E8DF004CB8A1 /* TableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell2.h; sourceTree = "<group>"; };
+		87FBA52B1C01E8DF004CB8A1 /* TableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell2.m; sourceTree = "<group>"; };
+		87FBA52C1C01E8DF004CB8A1 /* TableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,12 @@
 				8761E8161BFDFC6100AFABA3 /* ViewController.h */,
 				8761E8171BFDFC6100AFABA3 /* ViewController.m */,
 				8761E8191BFDFC6100AFABA3 /* Main.storyboard */,
+				87FBA52A1C01E8DF004CB8A1 /* TableViewCell2.h */,
+				87FBA52B1C01E8DF004CB8A1 /* TableViewCell2.m */,
+				87FBA52C1C01E8DF004CB8A1 /* TableViewCell2.xib */,
+				87FBA5271C01E858004CB8A1 /* MealTableViewCell.xib */,
+				87FBA5251C01E858004CB8A1 /* MealTableViewCell.h */,
+				87FBA5261C01E858004CB8A1 /* MealTableViewCell.m */,
 				8761E81C1BFDFC6100AFABA3 /* Assets.xcassets */,
 				8761E81E1BFDFC6100AFABA3 /* LaunchScreen.storyboard */,
 				8761E8211BFDFC6100AFABA3 /* Info.plist */,
@@ -244,6 +260,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FBA52E1C01E8DF004CB8A1 /* TableViewCell2.xib in Resources */,
+				87FBA5291C01E858004CB8A1 /* MealTableViewCell.xib in Resources */,
 				8761E8201BFDFC6100AFABA3 /* LaunchScreen.storyboard in Resources */,
 				8761E81D1BFDFC6100AFABA3 /* Assets.xcassets in Resources */,
 				8761E81B1BFDFC6100AFABA3 /* Main.storyboard in Resources */,
@@ -271,6 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FBA52D1C01E8DF004CB8A1 /* TableViewCell2.m in Sources */,
+				87FBA5281C01E858004CB8A1 /* MealTableViewCell.m in Sources */,
 				8761E8181BFDFC6100AFABA3 /* ViewController.m in Sources */,
 				8761E8151BFDFC6100AFABA3 /* AppDelegate.m in Sources */,
 				8761E8121BFDFC6100AFABA3 /* main.m in Sources */,
@@ -505,6 +525,7 @@
 				8761E83C1BFDFC6100AFABA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8761E83D1BFDFC6100AFABA3 /* Build configuration list for PBXNativeTarget "gosense-ios-clientTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +534,7 @@
 				8761E83F1BFDFC6100AFABA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8761E8401BFDFC6100AFABA3 /* Build configuration list for PBXNativeTarget "gosense-ios-clientUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +543,7 @@
 				8761E8421BFDFC6100AFABA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
