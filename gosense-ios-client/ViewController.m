@@ -13,9 +13,12 @@
 @end
 
 @implementation ViewController
-
+{
+    NSArray *tableData;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    tableData = [NSArray arrayWithObjects:@"Hello", @"World", nil];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
