@@ -22,8 +22,8 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="8bC-Xf-vdC" id="4j3-XX-JkX"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Isn-oW-a9y"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8qN-ue-dwG"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="p2F-pY-k5S"/>
                                 </connections>
                             </tableView>
                         </subviews>
