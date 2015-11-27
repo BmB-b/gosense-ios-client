@@ -20,6 +20,17 @@
     [super viewDidLoad];
     tableData = [NSArray arrayWithObjects:@"Hello", @"World", nil];
     NSLog(@"Now view did loaded");
+    NSString *apiUrl = @"https://www.netroby.com/api";
+    NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+    
+    NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
+    [[delegateFreeSession dataTaskWithURL: [NSURL URLWithString:apiUrl]
+                        completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                            NSLog(@"Got response %@ with error %@.\n", response, error);
+                            NSLog(@"Data:\n%@\nEND Data\n",
+                                  [[NSString alloc] initWithData: data encoding:NSUTF8StringEncoding]);
+                        }
+      ] resume];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
