@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     tableData = [NSArray arrayWithObjects:@"Hello", @"World", nil];
+    NSLog(@"Now view did loaded");
     // Do any additional setup after loading the view, typically from a nib.
 }
 
