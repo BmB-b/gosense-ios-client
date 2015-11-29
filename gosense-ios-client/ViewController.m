@@ -29,6 +29,12 @@
                             NSLog(@"Got response %@ with error %@.\n", response, error);
                             NSLog(@"Data:\n%@\nEND Data\n",
                                   [[NSString alloc] initWithData: data encoding:NSUTF8StringEncoding]);
+                            NSDictionary *realData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+                            NSLog(@"%@", realData);
+                            
+                            UITableView *tv = (UITableView *)self.view;
+                            NSLog(@"%@", tv);
+                            
                         }
       ] resume];
     // Do any additional setup after loading the view, typically from a nib.
@@ -39,7 +45,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
