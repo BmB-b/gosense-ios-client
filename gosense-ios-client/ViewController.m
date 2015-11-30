@@ -14,11 +14,10 @@
 
 @implementation ViewController
 {
-    NSArray *tableData;
+    NSDictionary *realData;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    tableData = [NSArray arrayWithObjects:@"Hello", @"World", nil];
     NSLog(@"Now view did loaded");
     NSString *apiUrl = @"https://www.netroby.com/api";
     NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -29,11 +28,8 @@
                             NSLog(@"Got response %@ with error %@.\n", response, error);
                             NSLog(@"Data:\n%@\nEND Data\n",
                                   [[NSString alloc] initWithData: data encoding:NSUTF8StringEncoding]);
-                            NSDictionary *realData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+                            realData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
                             NSLog(@"%@", realData);
-                            
-                            UITableView *tv = (UITableView *)self.view;
-                            NSLog(@"%@", tv);
                             
                         }
       ] resume];
@@ -53,7 +49,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MainCell"];
     }
-    cell.textLabel.text = @"Hello world";
+    cell.textLabel.text = realData.allValues;
     return  cell;
 }
 
