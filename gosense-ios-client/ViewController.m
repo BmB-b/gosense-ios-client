@@ -14,7 +14,7 @@
 
 @implementation ViewController
 {
-    NSDictionary *realData;
+    NSArray *realData;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,6 +30,7 @@
                                   [[NSString alloc] initWithData: data encoding:NSUTF8StringEncoding]);
                             realData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
                             NSLog(@"%@", realData);
+                            NSLog(@"%@", [[realData objectAtIndex:0] objectForKey:@"title"]);
                             
                         }
       ] resume];
@@ -49,7 +50,8 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MainCell"];
     }
-    cell.textLabel.text = realData.allValues;
+    NSLog(@"%@", [[realData objectAtIndex:0] objectForKey:@"title"]);
+    cell.textLabel.text = [[realData objectAtIndex:0] objectForKey:@"title"];
     return  cell;
 }
 
