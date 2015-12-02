@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NSURLConnectionDelegate>
+@interface ViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, NSURLConnectionDelegate>
 {
     NSMutableData *_responseData;
 }
