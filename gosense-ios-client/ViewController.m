@@ -31,7 +31,7 @@
                             realData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
                             NSLog(@"%@", realData);
                             NSLog(@"%@", [[realData objectAtIndex:0] objectForKey:@"title"]);
-                            [self.tableView reloadData];
+                         //   [self.tableView reloadData];
                             
                         }
       ] resume];
@@ -52,7 +52,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MainCell"];
     }
     NSLog(@"%@", [[realData objectAtIndex:0] objectForKey:@"title"]);
-    cell.textLabel.text = "Demo";
+    cell.textLabel.text = @"Demo";
     return  cell;
 }
 
