@@ -19,11 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Now view did loaded");
-    NSString *apiUrl = @"https://www.netroby.com/api";
+    NSString *apiUrl = @"https://www.netroby.com/api?page=%@";
+    NSString *realApiUrl = [NSString stringWithFormat:apiUrl, @"1"];
     NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
     
     NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
-    [[delegateFreeSession dataTaskWithURL: [NSURL URLWithString:apiUrl]
+    [[delegateFreeSession dataTaskWithURL: [NSURL URLWithString:realApiUrl]
                         completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                             NSLog(@"Got response %@ with error %@.\n", response, error);
                             NSLog(@"Data:\n%@\nEND Data\n",
