@@ -11,6 +11,7 @@
 @interface ViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, NSURLConnectionDelegate>
 {
     NSMutableData *_responseData;
+    NSInteger *page;
 }
 
 @end
