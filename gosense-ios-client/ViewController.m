@@ -32,6 +32,7 @@
                             realData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
                             NSLog(@"%@", realData);
                             NSLog(@"%@", [[realData objectAtIndex:0] objectForKey:@"title"]);
+                            NSLog(@"%@", [[realData objectAtIndex:0] objectForKey:@"aid"]);
                          //   [self.tableView reloadData];
                             
                         }
