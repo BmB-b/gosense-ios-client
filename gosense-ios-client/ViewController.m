@@ -18,7 +18,6 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"Now view did loaded");
     NSString *apiUrl = @"https://www.netroby.com/api?page=%@";
     NSString *realApiUrl = [NSString stringWithFormat:apiUrl, @"1"];
     NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
